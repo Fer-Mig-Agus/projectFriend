@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <title>HomeWork Ajax</title>
+</head>
+
+<body>
+    <h1 id="welcome-title">Bienvenido a tu <a href="index.html">Red Social</a> favorita</h1>
+    <div id="all-button">
+      <button id='boton' class="activa">Ver Amigos</button>
+      <button id="search-main" class="all-button-item">Buscar Amigos</button>
+      <button id="delete-main" class="all-button-item">Eliminar Amigos</button>
+    </div>
+    <div id="image-welcome">
+      <img id="best-img" src="./best-friend.png" alt="">
+    </div>
+  <main id="main">
+    <section id="ver-amigos">
+      <h2 id="lista-h2" class="title-section">Lista de Amigos</h2>
+      <div id="spinner-one" class="lds-ring"><div></div><div></div><div></div></div>
+      
+      <ul id='lista'>
+      </ul>
+    </section>
+    <section id="buscar-amigos">
+
+      <h2 id="buscar-h2" class="title-section">Busca a tus Amigos</h2>
+      <div class="content-buscador">
+        <input id='input' class="input-search" placeholder="Busca aqui..."></input>
+        <button id='search' class="boton-buscador" >Buscar</button>
+      </div>
+      <span id='amigo' class="encontrado"></span>
+      <span class='aviso-section'>Para salir preciona click en el titulo</span>
+
+    </section>
+    <section id="borrar-amigos">
+
+      <h2 id="borrar-h2" class="title-section">Borra a tus Amigos</h2>
+      <div class="content-buscador">
+
+        <input id='inputDelete' class="input-search" placeholder="Busca aqui..."></input>
+        <button id='delete' class="boton-buscador" >Delete</button>
+
+      </div>
+      <div id="spinner-two" class="lds-ring"><div></div><div></div><div></div></div>
+      <span id='success' class="encontrado"></span>
+      <span class='aviso-section'>Para salir preciona click en el titulo</span>
+    </section>
+
+  </main>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
